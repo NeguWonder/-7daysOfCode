@@ -1,0 +1,106 @@
+body {
+    display: flex;
+    justify-content: center;
+    margin: 20px;
+}
+
+header {
+    background: #f5eded;
+    width: 90%;
+    height: 80px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 20px 0px 20px;
+}
+
+.logo {
+    padding: 10px;
+    display: flex;
+}
+
+.logo>p {
+    font-size: 18px;
+    text-decoration: none;
+    padding-left: 5px;
+}
+
+.navegação{
+    padding: 0px 0px 0px 0px;
+}
+
+a {
+    text-decoration: none;
+    display: inline-block;
+    margin: 9px;
+    color: black;
+    font-size: 18px;
+}
+
+a:hover{
+    color: #8E2424;
+}
+
+#divBusca{
+    display: flex;
+    background-color: #ffffff;
+    border: solid 1px;
+    border-radius: 10px;
+    
+}
+
+#divBusca>img{
+    width: 25px;
+    height: 25px;
+    padding: 3px 10px;
+    background-color: transparent;
+}
+
+#divBusca>img:hover{
+    border-radius: 10px;
+    background: rgb(243, 243, 247);
+}
+
+
+#txtBusca {
+    float: left;
+    background-color: transparent;
+    padding-left: 5px;
+    font-style: italic;
+    font-size: 15px;
+    border: none;
+    width: 150px;
+}
+
+.cadastro {
+    display: flex;
+    justify-content: center;
+    border-radius: 15px;
+}
+.cadastro :nth-child(1) {
+    width: 90px;
+    height: 44px;
+    font-size: 15px;
+    text-decoration: none;
+    border: rgb(255, 255, 255);
+    border-radius: 8px;
+}
+
+.cadastro :nth-child(1):hover{
+    background: rgb(226, 226, 235);
+}
+
+.cadastro :nth-child(2) {
+    width: 90px;
+    height: 40px;
+    background-color: #8E2424;
+    border-radius: 8px;
+    border: none;
+    color: white; 
+    font-size: 14px;
+}
+
+.cadastro :nth-child(2):hover{
+background-color: rgb(50, 50, 57);
+transition: 2s;
+}
