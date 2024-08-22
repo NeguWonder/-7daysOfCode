@@ -1,7 +1,5 @@
 body {
-    display: flex;
-    justify-content: center;
-    margin: 20px;
+    align-items: center;
 }
 
 header {
@@ -11,21 +9,22 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 0px 20px 0px 20px;
+    padding: 0px 20px 0px 40px;
 }
 
 .logo {
     padding: 10px;
     display: flex;
+    align-items: center;
 }
 
 .logo>p {
     font-size: 18px;
     text-decoration: none;
-    padding-left: 5px;
+    padding-left: 10px;
 }
 
-.navegação{
+.navegação {
     padding: 0px 0px 0px 0px;
 }
 
@@ -37,30 +36,29 @@ a {
     font-size: 18px;
 }
 
-a:hover{
+a:hover {
     color: #8E2424;
 }
 
-#divBusca{
+#divBusca {
     display: flex;
     background-color: #ffffff;
     border: solid 1px;
     border-radius: 10px;
-    
+
 }
 
-#divBusca>img{
+#divBusca>img {
     width: 25px;
     height: 25px;
     padding: 3px 10px;
     background-color: transparent;
 }
 
-#divBusca>img:hover{
+#divBusca>img:hover {
     border-radius: 10px;
-    background: rgb(243, 243, 247);
+    background: rgb(221, 221, 244);
 }
-
 
 #txtBusca {
     float: left;
@@ -72,35 +70,389 @@ a:hover{
     width: 150px;
 }
 
-.cadastro {
+.cadastr {
     display: flex;
     justify-content: center;
+    text-align: center;
     border-radius: 15px;
 }
-.cadastro :nth-child(1) {
-    width: 90px;
+
+.cadastr>a {
+    width: 83px;
     height: 44px;
     font-size: 15px;
+    background-color: #ffffff;
     text-decoration: none;
-    border: rgb(255, 255, 255);
+    border: 1px solid rgb(44, 42, 42);
     border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
-.cadastro :nth-child(1):hover{
-    background: rgb(226, 226, 235);
+.cadastr :nth-child(1):hover {
+    background-color: rgb(50, 50, 57);
+    transition: 0.5s;
+    color: white;
 }
 
-.cadastro :nth-child(2) {
-    width: 90px;
+.cadastr :nth-child(2) {
+    width: 112px;
+    height: 40px;
+    background-color: #b64040;
+    border-radius: 10px;
+    border: 2px solid rgb(46, 45, 46);
+    font-size: 14px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.cadastr :nth-child(2):hover {
+    background-color: rgb(50, 50, 57);
+    transition: 0.9s;
+    color: white;
+}
+
+.cabeçalho {
+    flex-direction: column;
+    display: flex;
+    align-items: center;
+    padding-top: 30px;
+    margin-bottom: 100px;
+}
+
+.cabeçalho>p {
+    font-weight: 600;
+    line-height: 24px;
+    font-size: 20px;
+    color: #8E2424;
+    margin-bottom: 40px;
+}
+
+.cabeçalho>h1 {
+    font-size: 48px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 600;
+    width: 620px;
+    height: 60px;
+}
+
+.diferencial {
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 30px;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.conteinerMetric {
+    justify-content: center;
+    display: flex;
+    padding: 0px 0px 96px 0px;
+    gap: 32px;
+}
+
+.metric {
+    width: 280px;
+    height: 168px;
+    justify-content: center;
+    gap: 20px;
+}
+
+.metric>span {
+    line-height: 80px;
+    color: #8E2424;
+    font-size: 60px;
+    font-weight: 600;
+    font-family: 'inter', sans-serif;
+}
+
+.metric :nth-child(3) {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+}
+
+.metric>h1 {
+    font-size: 18px;
+    line-height: 28px;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.talentos {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.enunciado {
+    justify-content: center;
+}
+
+.enunciado>span {
+    font-size: 16px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    line-height: 45px;
+    color: #8E2424;
+    font-weight: bold;
+}
+
+.enunciado>p {
+    font-size: 2px;
+    line-height: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+}
+
+.enunciado>h1 {
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 44px;
+    font-size: 40px;
+    font-weight: bold;
+
+}
+
+.enunciado>p {
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 30px;
+    margin: 20px;
+    color: rgb(102, 112, 133, 1);
+}
+
+.talentos>img {
+    height: 400px;
+    width: 1216px;
+    margin: 40px 0px 0px 0px;
+}
+
+.aquiVagas {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+.arts>h1 {
+    margin-top: 50px;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.software {
+    margin-top: 40px;
+}
+
+.software>h1 {
+    padding-bottom: 10px;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.vagas {
+    width: 768px;
+    height: 100px;
+    border-radius: 16px;
+    border: 1px rgb(178, 190, 213) solid;
+    padding: 35px 24px 28px 24px;
+    margin-top: 20px;
+}
+
+.vagas>span {
+    font-weight: bold;
+}
+
+.informacao {
+    color: var(--cinza-claro);
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 80px;
+    gap: 24px;
+    display: flex;
+    align-self: stretch;
+}
+
+.Depoimentos {
+    width: 1440px;
+    height: 500px;
+    border-radius: 16px;
+    gap: 32px;
+    display: flex;
+    justify-content: center;
+    padding-top: 70px;
+}
+
+.depoimentosText {
+    width: 1216px;
+    height: 380px;
+    background-color: rgb(243, 224, 224);
+    font-size: 16px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    line-height: 45px;
+    color: rgba(142, 36, 36, 1);
+    font-weight: bold;
+    padding-top: 40px;
+}
+
+.depoimentosText>span {
+    font-size: 20px;
+}
+
+.Text>p {
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 44px;
+    font-size: 36px;
+    font-weight: bold;
+    align-items: center;
+    color: black;
+    text-align: center;
+}
+
+.avatar {
+    gap: 20px;
+    padding-top: 40px;
+}
+
+.avatar>img {
+    width: 56px;
+    height: 56px;
+}
+
+
+.colaborador {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.colaborador>span {
+    font-size: 16px;
+    color: rgb(16, 24, 40, 1);
+    text-align: center;
+}
+
+.colaborador>p {
+    font-size: 20px;
+    font-weight: 400;
+    color: rgb(102, 112, 133, 1);
+}
+
+footer {
+
+    display: flex;
+    align-items: center;
+}
+
+.Formulario {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 1440px;
+    gap: 32px;
+}
+
+.Formulario>span {
+    font-size: 36px;
+    color: rgb(16, 24, 40, 1);
+    text-align: center;
+    font-weight: bold;
+    letter-spacing: -2%;
+}
+
+.Formulario>:nth-child(2) {
+    font-size: 20px;
+    color: rgb(102, 112, 133, 1);
+}
+
+.Formulario>:nth-child(4) {
+    font-size: 16px;
+    font-weight: bold;
+    color: rgb(152, 162, 179, 1);
+    line-height: 24px;
+}
+
+.cadastro>input {
+    width: 300px;
+    height: 40px;
+    border-radius: 1px;
+}
+
+.cadastrar {
+    width: 110px;
     height: 40px;
     background-color: #8E2424;
     border-radius: 8px;
-    border: none;
-    color: white; 
+    color: white;
     font-size: 14px;
 }
 
-.cadastro :nth-child(2):hover{
-background-color: rgb(50, 50, 57);
-transition: 2s;
+.cadastrar:hover {
+    background-color: rgb(50, 50, 57);
+    transition: 2s;
 }
+
+/* CSS Login */
+
+.log {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+}
+
+.login {
+    width: 600px;
+    height: 400px;
+    border: solid black 2px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 20px;
+    border-radius: 10px;
+}
+
+.login>input {  
+    width: 300px;
+    height: 30px;
+    border-radius: 10px;
+    background-color: #f0dddd;
+}
+
+.login>input:hover {
+    border: cornflowerblue 100px;
+}
+
+button {
+    width: 100px;
+    height: 30px;
+    border-radius: 10px;
+}
+
+button:hover {
+    background-color: #8E2424;
+    color: white;
+}
+
+.recover {
+    width: 90%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    display: inline-flex;
+}
+
+.sen:hover {
+    text-decoration: underline;
+}
+
